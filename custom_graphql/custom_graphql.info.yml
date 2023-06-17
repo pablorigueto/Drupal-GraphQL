@@ -1,0 +1,11 @@
+name: Custom graphql
+type: module
+description: Provides custom graphql Drupal.
+package: Custom
+core_version_requirement: ^8 || ^9 || ^10
+dependencies:
+  - graphql:graphql
+  - node:node
+version: '10.0.0'
+# services:
+#   - custom_restful.services.yml

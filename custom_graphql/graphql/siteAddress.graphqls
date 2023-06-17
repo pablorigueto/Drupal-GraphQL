@@ -1,0 +1,22 @@
+schema {
+  query: Query
+}
+
+type Query {
+  site_address(id: Int!): SiteAddress
+  SiteAddresses(
+    offset: Int = 0
+    limit: Int = 10
+  ): SiteAddressConnection!
+}
+
+type SiteAddress {
+  id: Int!
+  title: String!
+  author: String
+}
+
+type SiteAddressConnection {
+  total: Int!
+  items: [SiteAddress!]
+}
